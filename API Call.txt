@@ -1,0 +1,21 @@
+// register
+POST http://localhost:5000/api/users/register
+Body (JSON):
+{
+  "name": "Rohit",
+  "email": "rohit@gmail.com",
+  "password": "123456"
+}
+
+// login 
+POST http://localhost:5000/api/users/login
+Body:
+{
+  "email": "rohit@gmail.com",
+  "password": "123456"
+}
+
+// get users
+GET http://localhost:5000/api/users
+Headers:
+Authorization: Bearer <TOKEN>
